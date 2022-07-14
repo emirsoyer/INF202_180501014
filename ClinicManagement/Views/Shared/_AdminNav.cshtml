@@ -1,0 +1,20 @@
+﻿<ul class="nav side-menu">
+    <li>
+        <a href="/"><i class="fa fa-home"></i> Dashboard </a>
+    </li>
+    <li><a href="@Url.Action("Index","Patients")"><i class="fa fa-edit"></i> Patienten</a></li>
+    <li><a href="@Url.Action("Index","Appointments")"><i class="fa fa-edit"></i> Termin</a></li>
+    <li><a href="@Url.Action("Index","Doctors")"><i class="fa fa-edit"></i> Ärzte</a></li>
+    <li> <a href="@Url.Action("Index","Account")"><i class="fa fa-edit"></i> Benutzer </a> </li>
+
+    <li>
+        <a><i class="fa fa-bar-chart-o"></i> Bericht <span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+            <li><a href="@Url.Action("DaillyAppointments","Reports")">Tägliche Termine </a></li>
+            <li><a href="@Url.Action("Appointments","Reports")">Termine </a></li>
+            <li><a href="@Url.Action("Attandences","Reports")">Teilnahme </a></li>
+
+        </ul>
+    </li>
+</ul>
+
